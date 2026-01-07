@@ -27,7 +27,6 @@ import java.util.Map;
  * 3. Based on AI intent, fetch data from ServiceDAO
  * 4. Construct final JSON response with ui_action
  */
-@WebServlet(name = "ChatServlet", urlPatterns = {"/chat"})
 public class ChatServlet extends HttpServlet {
     
     private OpenAIService openAIService;

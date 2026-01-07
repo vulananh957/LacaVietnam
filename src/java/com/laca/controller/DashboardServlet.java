@@ -11,7 +11,6 @@ import java.io.IOException;
  * DashboardServlet - Main entry point for client dashboard
  * Routes: /dashboard
  */
-@WebServlet(name = "DashboardServlet", urlPatterns = {"/dashboard", "/"})
 public class DashboardServlet extends HttpServlet {
     
     @Override

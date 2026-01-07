@@ -11,15 +11,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Laca Vietnam - AI Travel Assistant</title>
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
-    
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Load First -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS - Cache Busting -->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css?v=<%= System.currentTimeMillis() %>">
 </head>
 <body>
     <!-- SPLIT-SCREEN WORKSPACE -->
@@ -93,8 +96,8 @@
         
     </div>
     
-    <!-- JavaScript -->
-    <script src="${pageContext.request.contextPath}/assets/js/chat.js"></script>
+    <!-- JavaScript - Cache Busting -->
+    <script src="${pageContext.request.contextPath}/assets/js/chat.js?v=<%= System.currentTimeMillis() %>"></script>
     
     <script>
         // Initialize chat on page load

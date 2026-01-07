@@ -14,7 +14,6 @@ import java.io.IOException;
  * AuthServlet - Handle user authentication
  * Routes: /auth?action=login|logout|register
  */
-@WebServlet(name = "AuthServlet", urlPatterns = {"/auth"})
 public class AuthServlet extends HttpServlet {
     
     private UserDAO userDAO;

@@ -16,7 +16,6 @@ import java.io.IOException;
  * Must be protected by AdminFilter
  * Routes: /admin?page=dashboard|services|users
  */
-@WebServlet(name = "AdminServlet", urlPatterns = {"/admin"})
 public class AdminServlet extends HttpServlet {
     
     private UserDAO userDAO;
