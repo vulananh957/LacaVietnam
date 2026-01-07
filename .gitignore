@@ -1,0 +1,30 @@
+# LACA VIETNAM - Git Ignore File
+
+# Environment variables (IMPORTANT: Never commit API keys!)
+.env
+config.properties
+
+# Build artifacts
+build/
+dist/
+nbproject/private/
+nbbuild/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Tomcat
+/nbproject/private/
